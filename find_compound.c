@@ -81,7 +81,7 @@ void add_dictionary(char *string) {
 /* Inspect the dictionary trie*/ 
 void inspect_dictionary_trie(dictries_s *trace, char *str, unsigned int depth) {
     unsigned int    index; 
-    char            my_str[MAX_STRING_LENGTH]; 
+    char            my_str[MAX_STRING_LENGTH + 1]; 
 
     strncpy(my_str, str, MAX_STRING_LENGTH); 
     if (trace->is_leaf == true) {
